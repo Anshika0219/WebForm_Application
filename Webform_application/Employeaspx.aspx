@@ -7,37 +7,41 @@
     <title></title>
     <style type="text/css">
         .auto-style1 {
-            margin-left: 115px;
+            margin-left: 83px;
         }
         .auto-style2 {
-            margin-left: 57px;
+            margin-left: 22px;
         }
         .auto-style3 {
-            margin-left: 111px;
+            margin-left: 73px;
         }
         .auto-style4 {
-            margin-left: 77px;
+            margin-left: 46px;
         }
-        .auto-style5 {
-            margin-left: 66px;
-        }
+
         .auto-style6 {
-            margin-left: 126px;
+            margin-left: 95px;
         }
         .auto-style7 {
-            margin-left: 98px;
+            margin-left: 25px;
         }
         .auto-style8 {
-            margin-left: 140px;
+            margin-left: 26px;
         }
         .auto-style9 {
-            margin-left: 179px;
+            margin-left: 15px;
         }
         .auto-style10 {
-            margin-left: 409px;
+            margin-left: 153px;
         }
-        .auto-style11 {
-            width: 254px;
+        .auto-style12 {
+            text-align: center;
+        }
+        .auto-style13 {
+            margin-left: 35px;
+        }
+        .auto-style14 {
+            width: 64px;
         }
     </style>
 </head>
@@ -45,37 +49,45 @@
     <form id="form1" runat="server">
         <div>
             <table>
-                     <tr><td>Employe Name<asp:TextBox ID="EmployeName" runat="server" CssClass="auto-style5"></asp:TextBox>
-                         <br />
-                         </td> </tr>
-                     <tr><td>Employe Age<asp:TextBox ID="Employeage" runat="server" CssClass="auto-style4" OnTextChanged="Employeage_TextChanged"></asp:TextBox>
-                         <br />
-                         </td> </tr>
-                   <tr><td>EmailId <asp:TextBox ID="emailId" runat="server" CssClass="auto-style1"></asp:TextBox>
-                       <br />
-                       </td> </tr>
-                     <tr><td>Password<asp:TextBox ID="password" runat="server" CssClass="auto-style3"></asp:TextBox>
-                         <br />
-                         </td> </tr>
-              <tr><td>Contact Number<asp:TextBox ID="contactnumber" runat="server" CssClass="auto-style2"></asp:TextBox>
-                  <br />
-                  </td> </tr>
-                <tr><td> Sallery<asp:TextBox ID="Sallery" runat="server" CssClass="auto-style6"></asp:TextBox>
-                    <br />
-                    <br />
-                    </td></tr>
-               <tr><td><asp:Button ID="Insert" runat="server" Text="Insert" OnClick="Insert_Click" CssClass="auto-style10" Width="98px"/></td>
-                   <td class="auto-style11"><asp:Button ID="Read" runat="server" Text="Read" OnClick="Read_Click" CssClass="auto-style9" Width="59px" /></td>
-                 <td><asp:Button ID="Update" runat="server" Text="update" OnClick="Update_Click" CssClass="auto-style8" Width="74px" /></td>
-                   <td><asp:Button ID="Delete" runat="server" Text="Delete" OnClick="Delete_Click" CssClass="auto-style7" /></td>
-               </tr>
-                    <tr><td>
-                        <br />
+           <tr><td>Employe Name<asp:TextBox ID="EmployeName" runat="server" CssClass="auto-style13"></asp:TextBox>
+               <br />
+               </td> </tr>
+           <tr><td>Employe Age<asp:TextBox ID="Employeage" runat="server" CssClass="auto-style4"></asp:TextBox>
+               <br />
+               </td> </tr>
+           <tr><td>EmailId <asp:TextBox ID="emailId" runat="server" CssClass="auto-style1"></asp:TextBox>
+               <br />
+               </td> </tr>
+           <tr><td>Password<asp:TextBox ID="password" runat="server" CssClass="auto-style3"></asp:TextBox>
+               <br />
+               </td> </tr>
+           <tr><td>Contact Number<asp:TextBox ID="contactnumber" runat="server" CssClass="auto-style2"></asp:TextBox>
+               <br />
+               </td> </tr>
+           <tr><td> Sallery<asp:TextBox ID="Sallery" runat="server" CssClass="auto-style6"></asp:TextBox>
+               <br />
+               </td>
+           <td>
+               <br />
+               <asp:Button ID="Insert" runat="server" Text="Insert" OnClick="Insert_Click" CssClass="auto-style10" Width="82px"/></td>
+               <td class="auto-style14">
+                   <br />
+                   <asp:Button ID="Read" runat="server" Text="Read" OnClick="Read_Click" CssClass="auto-style9" Width="69px" /></td>
+               <td>
+                   <br />
+                   <asp:Button ID="Update" runat="server" Text="update" OnClick="Update_Click" CssClass="auto-style8" Width="73px" /></td>
+               <td>
+                   <br />
+                   <asp:Button ID="Delete" runat="server" Text="Delete" OnClick="Delete_Click" CssClass="auto-style7" /></td></tr>
+            <tr><td class="auto-style12">
+                        <strong>
                         <br />
                         <br />
                         <asp:Label ID="Message" runat="server" Text="Message"></asp:Label>
                         <br />
-                        </td></tr>
+                        <br />
+                        </strong></td></tr>
+                <asp:GridView ID="GridView1" runat="server"></asp:GridView>
                    </table>
             </div>
     </form>
